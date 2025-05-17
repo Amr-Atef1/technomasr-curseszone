@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Tajawal', sans-serif;
+}
+.purble{
+  background-color:#2a1c40;
+}
+ul{
+  list-style: none;
+}
+.my-custom-height {
+  height: calc(100vh - 90px);
+}
+@media (max-width: 768px) {
+.my-custom-height {
+  height: 100%;
+}
+}
+.course-info{
+  background-color:#e6e2ec ;
+}
+.course-info i{
+  color: #321a66;
+}
+.course-info:hover{
+  background-color: #321a66;
+}
+.course-info:hover i{
+  color: gold;
+  position: relative;
+  left: 8px;
+}
+.price{
+  color: #321a66;
+  position: relative;
+  top: 8px;
+}
+
+
+.custom-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 15px !important;
+  
+}
+
+
+@media (min-width: 992px) {
+  .lg-vh-100 {
+    height: 100vh;
+  }
+  .card{
+  --bs-card-spacer-y: 0;
+    --bs-card-spacer-x: 0;
+}
+}
+.carousel-control-next, .carousel-control-prev{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(212 191 0);
+  border-radius: 50%;
+  box-shadow: 0 0 100px 60px yellow;
+  top: 60%; 
+  transform: translateY(-50%);
+}
+
+.custom-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #999;
+  border: none;
+  margin: 0 6px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-indicators .active {
+  background-color: rgb(212 191 0); /* لون الدائرة النشطة */
+}
+
+.hova a{
+  color:white;
+  text-decoration: none;
+}
+.hova:hover  a{
+  color:gold;
+}
+
+/* .align-to-first-line {
+  position: relative;
+  bottom: 0px;
+  max-width: 800px;
+  transform: translateY(5%); 
+  margin-top: 4.5rem; 
+} */
+
+.hero-align-to-first-line {
+  position: relative;
+  top: -90px;
+  max-width:100%; 
+  width: 100%;        /* الصورة لا تتجاوز عرض العمود */
+  height: auto;
+  margin-top: 4.5rem;
+  transform: scale(1.2) translateY(5%);
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .hero-align-to-first-line {
+    top: 0;
+    transform: scale(1) translateY(0);
+    margin-top: 2rem;
+  }
+}
+.align-to-first-line {
+  position: relative;
+  bottom: -20px;
+  max-width:100%; 
+  width: 100%;        /* الصورة لا تتجاوز عرض العمود */
+  height: auto;
+  margin-top: 4.5rem;
+  transform: scale(1.2) translateY(5%);
+}
+
+@media (max-width: 768px) {
+  .align-to-first-line {
+    margin-top: 2rem;       /* تقليل المسافة في الشاشات الصغيرة */
+    transform: translateY(0);  /* منع التحريك للأسفل لتفادي كسر التصميم */
+  }
+}
+
+/* في ملف CSS منفصل */
+/* تجاوز أنماط الخط الزمني */
+.vertical-timeline {
+  direction: rtl;
+}
+
+/* العناصر على اليسار */
+.vertical-timeline-element--left {
+  direction: ltr !important;
+}
+.vertical-timeline-element--left .vertical-timeline-element-content {
+  direction: rtl !important;
+  text-align: right !important;
+  margin-right: 60px !important;
+  margin-left: 0 !important;
+}
+.vertical-timeline-element--left .vertical-timeline-element-arrow {
+  right: -15px !important;
+  left: auto !important;
+  border-right: 7px solid #232631 !important;
+  border-left: none !important;
+}
+
+/* العناصر على اليمين */
+.vertical-timeline-element--right {
+  direction: rtl !important;
+}
+.vertical-timeline-element--right .vertical-timeline-element-content {
+  direction: ltr !important;
+  text-align: right !important;
+  margin-left: 60px !important;
+  margin-right: 0 !important;
+}
+.vertical-timeline-element--right .vertical-timeline-element-arrow {
+  left: -15px !important;
+  right: auto !important;
+  border-left: 7px solid #232631 !important;
+  border-right: none !important;
+}
+
+/* تعديل عام على السهم */
+.vertical-timeline-element-arrow {
+  transform: none !important;
+  right: auto !important;
+  left: auto !important;
+}
+.vertical-timeline::before {
+  background: none !important;
+  border-right: 3px dashed gold !important; /* الخط المتقطع */
+  top: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -1.5px; /* نصف عرض الخط */
+}
+
+/* 🎯 دعم التصميم على الموبايل */
+@media screen and (max-width: 768px) {
+  .vertical-timeline-element--left .vertical-timeline-element-content,
+  .vertical-timeline-element--right .vertical-timeline-element-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+    direction: rtl !important;
+  }
+
+  .vertical-timeline-element--left .vertical-timeline-element-arrow,
+  .vertical-timeline-element--right .vertical-timeline-element-arrow {
+    display: none !important;
+  }
+
+  .vertical-timeline::before {
+    left: 8px !important;
+    right: auto !important;
+  }
+}
+
+
+/* في ملف CSS منفصل */
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+audio {
+  width: 100%;
+  height: 40px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #489ff7;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+  border-radius: 50%;
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(0,0,0,0.03);
+}
