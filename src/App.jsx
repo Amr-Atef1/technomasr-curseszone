@@ -14,6 +14,7 @@ import Consulting from './pages/Consulting'
 import Cart from './pages/Cart'
 import CourseInfo from './pages/Courses/CourseInfo'
 import CheckoutSuccess from './pages/CheckoutSuccess'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
     <Navbar/>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/coach" element={<Coach />} />
