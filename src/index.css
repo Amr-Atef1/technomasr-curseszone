@@ -1,44 +1,43 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
 }
-.purble{
-  background-color:#2a1c40;
+.purble {
+  background-color: #2a1c40;
 }
-ul{
+ul {
   list-style: none;
 }
 .my-custom-height {
   height: calc(100vh - 90px);
 }
 @media (max-width: 768px) {
-.my-custom-height {
-  height: 100%;
+  .my-custom-height {
+    height: 100%;
+  }
 }
+.course-info {
+  background-color: #e6e2ec;
 }
-.course-info{
-  background-color:#e6e2ec ;
-}
-.course-info i{
+.course-info i {
   color: #321a66;
 }
-.course-info:hover{
+.course-info:hover {
   background-color: #321a66;
 }
-.course-info:hover i{
+.course-info:hover i {
   color: gold;
   position: relative;
   left: 8px;
 }
-.price{
+.price {
   color: #321a66;
   position: relative;
   top: 8px;
 }
-
 
 .custom-card {
   transition: all 0.3s ease;
@@ -54,49 +53,16 @@ ul{
 
 .card-img-top {
   border-radius: 15px !important;
-  
 }
-
 
 @media (min-width: 992px) {
   .lg-vh-100 {
     height: 100vh;
   }
-  .card{
-  --bs-card-spacer-y: 0;
+  .card {
+    --bs-card-spacer-y: 0;
     --bs-card-spacer-x: 0;
-}
-}
-.carousel-control-next, .carousel-control-prev{
-  width: 50px;
-  height: 50px;
-  background-color: rgb(212 191 0);
-  border-radius: 50%;
-  box-shadow: 0 0 100px 60px yellow;
-  top: 60%; 
-  transform: translateY(-50%);
-}
-
-.custom-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #999;
-  border: none;
-  margin: 0 6px;
-  transition: background-color 0.3s ease;
-}
-
-.custom-indicators .active {
-  background-color: rgb(212 191 0); /* لون الدائرة النشطة */
-}
-
-.hova a{
-  color:white;
-  text-decoration: none;
-}
-.hova:hover  a{
-  color:gold;
+  }
 }
 
 /* .align-to-first-line {
@@ -110,8 +76,8 @@ ul{
 .hero-align-to-first-line {
   position: relative;
   top: -90px;
-  max-width:100%; 
-  width: 100%;        /* الصورة لا تتجاوز عرض العمود */
+  max-width: 100%;
+  width: 100%; /* الصورة لا تتجاوز عرض العمود */
   height: auto;
   margin-top: 4.5rem;
   transform: scale(1.2) translateY(5%);
@@ -127,8 +93,8 @@ ul{
 .align-to-first-line {
   position: relative;
   bottom: -20px;
-  max-width:100%; 
-  width: 100%;        /* الصورة لا تتجاوز عرض العمود */
+  max-width: 100%;
+  width: 100%; /* الصورة لا تتجاوز عرض العمود */
   height: auto;
   margin-top: 4.5rem;
   transform: scale(1.2) translateY(5%);
@@ -136,8 +102,8 @@ ul{
 
 @media (max-width: 768px) {
   .align-to-first-line {
-    margin-top: 2rem;       /* تقليل المسافة في الشاشات الصغيرة */
-    transform: translateY(0);  /* منع التحريك للأسفل لتفادي كسر التصميم */
+    margin-top: 2rem; /* تقليل المسافة في الشاشات الصغيرة */
+    transform: translateY(0); /* منع التحريك للأسفل لتفادي كسر التصميم */
   }
 }
 
@@ -219,7 +185,6 @@ ul{
   }
 }
 
-
 /* في ملف CSS منفصل */
 
 .object-fit-cover {
@@ -242,5 +207,72 @@ audio::-webkit-media-controls-mute-button {
 
 .card-footer {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(0,0,0,0.03);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+/* تثبيت أزرار التحكم في الجانب الأيسر مع RTL */
+/* 📌 Bullets / Pagination Dots */
+.swiper .swiper-pagination-bullet {
+  background-color: #999;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #ffc107 !important; /* اللون البرتقالي أو الذهبي */
+}
+
+/* 📌 Arrows */
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  top: 60% !important;
+  background-color: #d4bc00;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 60px 30px rgba(235, 223, 5, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  overflow: visible; /* ✅ مهم */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.swiper .swiper-button-prev {
+  right: 75px !important;
+  left: auto;
+}
+
+.swiper .swiper-button-next {
+  left: 75px !important;
+  right: auto;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover {
+  transform: scale(1.1);
+  background-color: #f3d500; /* لون أفتح عند الـ hover */
+}
+@media (max-width: 768px) {
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 30px 15px rgba(235, 223, 5, 0.4); /* خف شوية */
+  }
+
+  .swiper .swiper-button-next::after,
+  .swiper .swiper-button-prev::after {
+    font-size: 16px;
+  }
 }
