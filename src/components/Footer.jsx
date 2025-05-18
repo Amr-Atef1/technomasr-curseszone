@@ -14,39 +14,39 @@ const Footer = () => {
               <div className="d-flex flex-column justify-content-center align-items-center gap-3 mb-3">
                 <img  className="" style={{width:"30%"}} src={logo} alt="logo-img" />
                 <ul className="list-unstyled fs-5  d-sm-flex gap-3 ">
-                  <li className="mb-2 hova">
-                    <Link to="/" className=" text-decoration-none ">
+                  <li className="mb-2 ">
+                    <Link to="/" className=" hova">
                     الرئيسيه
                     </Link>
                   </li>
-                  <li className="mb-2 hova">
-                    <Link to="/coach">
+                  <li className="mb-2 ">
+                    <Link to="/coach" className=" hova">
                       عن المدرب
                     </Link>
                   </li>
-                  <li className="mb-2 hova">
-                    <Link to="/courses/trainingCourses" >
+                  <li className="mb-2 ">
+                    <Link to="/courses/trainingCourses" className=" hova">
                       الدورات التدريبيه
                     </Link>
                   </li>
-                  <li className="mb-2 hova" >
-                    <Link to="/blog" >
+                  <li className="mb-2 " >
+                    <Link to="/blog" className=" hova">
                       المدونه
                     </Link>
                   </li>
 
-                  <li className="mb-2 hova">
-                    <Link to="/consulting" >
+                  <li className="mb-2 ">
+                    <Link to="/consulting"className=" hova" >
                       الإستشارات
                     </Link>
                   </li>
-                  <li className="mb-2 hova">
-                    <Link to="/podcast" >
+                  <li className="mb-2 ">
+                    <Link to="/podcast" className=" hova">
                       بودكاست
                     </Link>
                   </li>
-                  <li className="mb-2 hova">
-                    <Link to="/contact">
+                  <li className="mb-2 ">
+                    <Link to="/contact" className=" hova">
                       تواصل معنا
                     </Link>
                   </li>

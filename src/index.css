@@ -11,6 +11,10 @@
 ul {
   list-style: none;
 }
+.hova{
+  text-decoration: none;
+  color: white;
+}
 .my-custom-height {
   height: calc(100vh - 90px);
 }
