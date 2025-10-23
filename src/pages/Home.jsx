@@ -1,5 +1,4 @@
-import React from "react";
-import HeroSection from "./Homepages/heroSection";
+import HeroSection from "./Homepages/HeroSection";
 import BioSection from "../components/BioSection";
 import Courses from "./Homepages/Courses";
 import Testimonials from "./Homepages/Testimonials";

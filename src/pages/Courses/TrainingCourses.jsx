@@ -1,3 +1,5 @@
+
+
 import { useEffect, useState } from "react";
 import Branch from "../../components/Branch";
 import coursesImage from "../../assets/courses_image.webp";
@@ -40,7 +42,6 @@ const TrainingCourses = () => {
       !filters.rating || course.rating >= parseFloat(filters.rating);
     const matchesLocation =
       !filters.location || course.location === filters.location;
-
     return matchesSearch && matchesPrice && matchesRating && matchesLocation;
   });
 
@@ -74,7 +75,7 @@ const TrainingCourses = () => {
     if (end - start + 1 < maxVisible) {
       start = Math.max(end - maxVisible + 1, 1);
     }
-
+    
     const pages = [];
     if (start > 1) pages.push("...");
     for (let i = start; i <= end; i++) pages.push(i);

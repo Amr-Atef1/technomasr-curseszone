@@ -19,6 +19,7 @@
     "react-responsive": "^10.0.1",
     "react-router-dom": "^7.6.0",
     "react-vertical-timeline-component": "^3.5.3",
+    "serve": "^14.2.5",
     "swiper": "^11.2.6"
   },
   "devDependencies": {

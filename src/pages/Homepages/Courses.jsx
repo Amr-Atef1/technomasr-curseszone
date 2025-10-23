@@ -30,7 +30,7 @@ const Courses = () => {
         </p>
 
         {/* الكروت */}
-                 <div className="row g-4">
+              <div className="row g-4">
             {mainCourses.map((course, index) => {
               return (
                 <motion.div
